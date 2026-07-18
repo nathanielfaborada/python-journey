@@ -1,3 +1,4 @@
+import random
 def idagdag(unang_numero, pangalawang_numero):
     return unang_numero + pangalawang_numero
 
@@ -13,6 +14,12 @@ def hatiin(unang_numero, pangalawang_numero):
 
 print("-"*25)
 print("Calculator")
+
+# una = random.randint(1,100)
+# pangalawa = random.randint(1,100) 
+# print("Random first number = ", una)
+# print("Random Second Numer = ", pangalawa)
+
 una = int(input("Ilagay mo ang unang numero = "))
 pangalawa = int(input("Ilagay mo ang pangalawang numero = "))
 print("-"*25)
@@ -28,17 +35,18 @@ while True:
 
     if choice == '+':
         Kabuuan = idagdag(una, pangalawa)
-        print("Kabuuan =", Kabuuan)
+
+        print(f'{una} + {pangalawa} = {Kabuuan}')
         break
 
     elif choice == '-':
         kaibahan = ibawas(una, pangalawa)
-        print("Kaibahan =", kaibahan)
+        print(f'{una} + {pangalawa} = {kaibahan}')
         break
 
     elif choice == 'x': 
         Produkto = paramihin(una , pangalawa)
-        print("Produkto =", Produkto)
+        print(f'{una} + {pangalawa} = {Produkto}')
         break
 
     elif choice == '/':
@@ -50,7 +58,7 @@ while True:
 
         else:
             Bahagimbilang = hatiin(una, pangalawa)
-            print("Bahagimbilang =", Bahagimbilang)
+            print(f'{una} + {pangalawa} = {Bahagimbilang}')
             break   
 
 
