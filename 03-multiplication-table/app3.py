@@ -2,7 +2,7 @@
 def print_table_group(numbers, i):
     for num in numbers:
         output = num * i
-        print(f'{num} x {i} = {output}', end='\t')
+        print(f'{num} x {i} = {output}' , end='\t')
     print()
 
 def multiplication_generator():
