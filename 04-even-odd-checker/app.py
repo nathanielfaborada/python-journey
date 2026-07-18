@@ -12,9 +12,3 @@ def even_odd_checker():
             print(f'{i} is odd')
 
 even_odd_checker()
-
-# try:
-  
-
-# except ValueError:
-#     print("Thats not a number")
